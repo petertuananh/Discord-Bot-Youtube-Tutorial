@@ -102,5 +102,6 @@ client.on('messageCreate', async (message) => {
             }
         }
         command.run(client, message, args, prefix)
+
     } 
 })
