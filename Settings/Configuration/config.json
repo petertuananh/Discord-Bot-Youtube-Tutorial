@@ -1,11 +1,11 @@
 {
     "discord" : {
-        "token" : "",
+        "token" : "OTg2MTA1MTA4NDE4OTMyNzQ2.GeLzRu.DDR_y9KZqJvlRah9WZjHCTLnGPiQK90rA-fyKY",
         "secret" : ""
     },
     "setting" : {
-        "prefix" : "",
-        "ownerId" : "",
+        "prefix" : "yt!",
+        "ownerId" : "786569661231005716",
         "presence" : {
             "status" : "online",
             "activity" : "Peter Tuan Anh",
