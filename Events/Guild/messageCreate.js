@@ -5,6 +5,7 @@ const db = require("quick.db");
 const cooldown = new Map();
 
 client.on('messageCreate', async (message) => {
+    if (!message.guild) return;
 
     const embed = new Discord.MessageEmbed()
         .setColor("RED")
