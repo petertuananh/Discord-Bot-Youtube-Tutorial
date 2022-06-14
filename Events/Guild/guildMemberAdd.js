@@ -1,0 +1,13 @@
+const client = require("../../main")
+const Discord = require("discord.js")
+client.on("guildMemberAdd", async (member) => {
+    const embed = new Discord.MessageEmbed()
+        .setColor("AQUA")
+        .setTitle(`New member joined`)
+        .addField(`Welcome you to ${member.guild.name}`, `> Remember, follow our rule at <#911081571132522536>\n> And you can chat with members at <#968037614630346822>\n> Wish you have a nice day!`)
+        .setAuthor({name: `${member.user.tag}`})
+        .setThumbnail(member.user.displayAvatarURL({dynamic: true, size: 4096, type: "png"}))
+        .setImage(member.guild.bannerURL({dynamic: true, size: 4096, type: "png"}))
+        .setFooter({text : `You are ${member.guild.memberCount}th member`})
+    return member.send({embeds: [embed]})
+})

@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-// const client = require("../../ElainaBOT.js")
 const config = require('../../Settings/Configuration/config.json')
 module.exports = {
     name: "ping",
@@ -7,11 +6,9 @@ module.exports = {
     description: `Check ping`,
     cooldown: 5,
     category: "Information",
-    usage: `${config.prefix}ping`,
     options1: `ping`,
     ownerOnly : false,
-
-    run: async (client, message, args) => {
+    run: async (client, message, args, prefix) => {
         const msg = await message.reply(`Checking ping...`)
 
         const pingBOT = msg.createdTimestamp - message.createdTimestamp
