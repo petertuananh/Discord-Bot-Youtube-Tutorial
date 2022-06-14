@@ -1,0 +1,15 @@
+{
+    "discord" : {
+        "token" : "OTg2MDc3NjU2MjQyMDY5NTQ1.GYyTHN.5bWB7vhxsp28nB5K1-9x9mmrIVjoCa7O3fomwY",
+        "secret" : ""
+    },
+    "setting" : {
+        "prefix" : "",
+        "ownerId" : "",
+        "presence" : {
+            "status" : "",
+            "activity" : "",
+            "type" : "PLAYING"
+        }
+    }
+}
